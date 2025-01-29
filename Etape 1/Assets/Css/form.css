@@ -1,0 +1,91 @@
+fieldset{
+    border-radius: 20px;
+    background-color:rgb(147, 177, 166);
+}
+
+.btn {
+    width: 100px;
+    border-radius: 70%;
+    cursor: pointer;
+    padding: 3px;
+    display: block;
+    margin: 10px auto;
+    line-height: 40px;
+}
+
+.btn-page {
+    background-color: rgb(92, 131, 116);
+    color: whitesmoke;
+    border: 1px solid rgb(24, 61, 61);
+}
+Ò
+.btn-primary {
+    background-color: rgb(24, 61, 61);
+    color: whitesmoke;
+    border: 1px solid white;
+}
+
+.btn-secondary {
+    background-color:rgb(92, 131, 116);
+    color: white;
+    border: 1px solid rgb(24, 61, 61);
+    text-align: center;
+}
+
+.btn-send {
+    background-color: rgb(9, 162, 233);
+    color: whitesmoke;
+    border: 1px solid white;
+}
+
+.btn-load {
+    background-color: rgb(44, 117, 10);
+    color: whitesmoke;
+    border: 1px solid white;
+}
+form label {
+    display: block;
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+form legend {
+    font-size: 3em;
+    background-color: rgb(92, 131, 116);
+    color:rgb(4, 13, 18);
+    padding: 5px;
+    border-radius: 10px 25px;
+}
+
+form {
+    margin: 20px;
+    text-align: center;
+}
+
+form input {
+    border-radius: 100em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    outline: none;
+    padding: .5rem 1.5rem;
+    width: 70%;
+    text-align: center;
+}
+
+.form-group input {
+    border: 2px solid red;
+    border-radius: 100em;
+    color: grey;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    outline: none;
+    padding: .5rem 1.5rem;
+    width: 80%;
+}
+
+.form-group label {
+    font-size: 30px;
+}
+a{
+    text-decoration: none;
+}
