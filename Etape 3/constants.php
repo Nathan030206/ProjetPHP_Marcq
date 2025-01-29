@@ -1,18 +1,20 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Css/base.css">
     <link rel="stylesheet" href="Css/animation.css">
+    <link rel="stylesheet" href="Css/flex.css">
     <link rel="stylesheet" href="Css/form.css">
-    <link rel="stylesheet" href="Css/flex.css"> 
     <title>BB</title>
 </head>
 <body>
-<header>
+    <header>
         <ul class="flexible space-evenly">
-             <!-- grand écran -->
+            <!-- grand écran -->
             <li class="menu"><a href="index.php">Home</a></li>
             <li  class="menu"><a href="inscriptionOrEditProfil.php">Inscription</a></li>
             <li  class="menu"><a href="connexion.php">Connexion</a></li>
@@ -23,28 +25,32 @@
         </ul>
     </header>
     <main>
-        <div class="flex space-evenly wrap">
-            <form method="post" action="">
-                <fieldset>
-                    <legend>Se connecter</legend>
-                    <div class="mb-3">
-                        <label for="Login" class="form-label">Login</label>
-                        <input type="text" placeholder="Login" class="form-control" id="login" aria-describedby="emailHelp" name="login" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="Password" class="form-label">Mot de passe</label>
-                        <input type="password" placeholder="Mot de passe" class="form-control" id="mot_de_passe" name="mot_de_passe" required>
-                    </div>
-                    <div>
-                        <button name="btnEnvoi" class="btn btn-primary">Envoi</button>
-                    </div>
-                </fieldset>
-                <div>
-                    <h4 class="text-danger">Pas encore inscrit ?</h4>
-                    <a href="inscriptionOrEditProfil.php" class="btn btn-secondary">Cliquez ici !</a>
-                </div>
-            </form>
-  
+        <h1>Voir l'école => Nom de l'école</h1>
+            <img class="imageMilieu" src="Images/itnIm.jpeg" alt="Image de l'école">
+        <div class="flexible wrap space-around">
+            <div class="card border">
+                <h2>Informations générales</h2>
+                <p>Rue de la pépinière 101</p>
+                <p><span>5000</span> - <span>NAMUR</span></p>               
+            </div>
+            <div class="card border"> 
+                <h2>Téléphone</h2>
+                <p>081/729011</p>
+            </div>
+            <div class="card border">
+                <h2>Options de l'école</h2>
+                <table>
+                    <tr>
+                        <td>Transition Technique</td>
+                    </tr>
+                    <tr>
+                        <td>Qualification technique</td>
+                    </tr>
+                    <tr>
+                        <td>Enseignement Professionnel</td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </main>
     <footer>
