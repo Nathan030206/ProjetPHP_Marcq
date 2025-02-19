@@ -38,8 +38,22 @@ function connectUser($pdo)
             return true;
         }
     }catch (PDOException $e) {
-        $message = $e ->getMessage();
+        $message = $e->getMessage();
         die($message);
+    }
+}
+
+function verifEmptyData()
+{
+    foreach ($_POST as $key => $value) {
+        if (empty(str_replace(' ', '', $value))){
+            $messageError[$key] = "Votre " . $key  . "est vide.";
+        }
+    }
+    if (isset($messageError)) {
+        return $messageError;
+    } else {
+        return false;
     }
 }
 
