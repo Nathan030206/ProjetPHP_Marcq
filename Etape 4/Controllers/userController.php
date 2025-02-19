@@ -3,7 +3,11 @@
 $uri = $_SERVER["REQUEST_URI"];
 var_dump($uri);
 if ($uri === "/connexion"){
+
     if(isset($_POST['btnEnvoi'])){
+
+        $erreur=false;
+
         if(connectUser($pdo)){
             header("location:/");
         }
@@ -14,9 +18,6 @@ if ($uri === "/connexion"){
     $title = "Connexion";
     $template = "Views/Users/connexion.php";
     require_once("Views/base.php");
-}
-elseif ($uri === "/deconnexion"){
-
 }
 elseif ($uri ==="/inscription"){
     if(isset($_POST['btnEnvoi'])){
@@ -41,30 +42,14 @@ elseif ($uri==="/updateProfil"){
         }
     }
     $title = "Mise à jour du profil";
-    $template = "Views/Users/inscriptionOrEditProfile.php";
-    require_once("Viewq/base.php");
+    $template = "Views/Users/inscriptionOrEditProfil.php";
+    require_once("Views/base.php");
 }
 
 elseif ($uri ==="/deconnexion") {
     session_destroy();
-    header("loaction:/");
+    header("location:/");
 }
-
-function verifEmptyData()
-{
-    foreach ($_POST as $key => $value) {
-        if (empty(str_replace(' ', '', $value))){
-            $messageError[$key] = "Votre " . $key  . "est vide.";
-        }
-    }
-    if (isset($messageError)) {
-        return $messageError;
-    } else {
-        return false;
-    }
-}
-
-
 
 
 ?>

@@ -6,7 +6,7 @@
     <div class="border card">
         <h2 class="center"><?= $school->schoolNom ?></h2>
         <div>
-            <div>
+            <div class="flexible blocImageEcole">
                 <img src="<?= $school->schoolImage ?>" alt="photo de l'école">
             </div>
             <div class="center">
