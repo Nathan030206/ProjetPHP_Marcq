@@ -1,5 +1,4 @@
 <?php 
-
 require_once("Models/userModel.php");
 
 $uri = $_SERVER["REQUEST_URI"];
